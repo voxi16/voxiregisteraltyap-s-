@@ -22,7 +22,7 @@ fs.readdirSync("./events").filter(file => file.endsWith(".js")).forEach(file => 
     console.log(`[Event] ${file.replace(".js", "")} event loaded.`);
 });
 
-mongoose.connect(`mongodb+srv://voxi:55BAXBANY@cluster0.m6shf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true}).then(c => console.log(`Bot başarıyla MongoDBye bağlandı! youtube.com/linlords LinLords Community`)).catch(err => console.error(`Bot mongodbye bağlanamadı bir hata var!`));
+mongoose.connect(``, {useNewUrlParser: true, useUnifiedTopology: true}).then(c => console.log(`Bot başarıyla MongoDBye bağlandı! youtube.com/linlords LinLords Community`)).catch(err => console.error(`Bot mongodbye bağlanamadı bir hata var!`));
 client.login(config.Token).then(c => console.log(`${client.user.tag} isimli bota bağlanıldı, artık hazırım!`)).catch(err => console.error(`Bota bağlanılamadı, bir hata mevcut!`));
 
 //Karsılama-tag
